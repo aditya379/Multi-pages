@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, rgb(69, 0, 69), black);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color :rgb(222, 222, 222);
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h1{
+    margin: 15px;
+    letter-spacing: 3px;
+}
+nav select{
+    width: 120px;
+    height: 40px;
+    margin: 15px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav option{
+padding: 10px;
+font-size: 18px;
+font-weight: bold;  
+background-color:rgb(69, 0, 69) ;
+letter-spacing: 3px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 3px;
+    width: 100%;
+    height:auto;
+}
+
+.texts{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 28px;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.texts a{
+    color:rgb(130, 0, 130) ;
+    font-weight: bold;
+}
+
+.text a{
+    color:rgb(130, 0, 130);
+    font-weight: bold;
+}
+
+.images img{
+    width: 500px;
+    filter: invert(1);
+}
+
+.card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+}
+
+.soicals{
+    width: 80%;
+    height: 50px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32px;
+}
+
+.soicals p{
+    font-size: 18px;
+    color:rgb(130, 0, 130) ;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.soicals .icons{
+    display: flex;
+    gap: 50px;
+}
+
+@media screen and (max-width: 768px) {
+
+    body{
+        height: 94vh;
+        overflow: hidden;
+    }
+    nav h1 {
+        margin: 10px; /* Adjust margin for smaller screens */
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+.main{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+    nav select {
+        width: 80px; 
+        height: 30px; 
+        margin: 10px; 
+        font-size: 14px; 
+    }
+
+    .texts {
+        font-size: 20px; 
+        text-align: center;
+    }
+
+    .images img {
+        width: 300px; 
+    }
+
+    .soicals {
+        font-size: 24px; 
+    }
+
+    .soicals p {
+        font-size: 14px; 
+    }
+}
+
