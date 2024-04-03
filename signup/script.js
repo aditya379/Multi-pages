@@ -31,7 +31,7 @@ function signUp() {
       return;
     }
 
-    let confirmMsg = confirm("You Want to SignUp ?");
+    let confirmMsg = confirm("Do you want to sign up?");
     if (confirmMsg) {
       localStorage.setItem("UserName", namevalue);
       localStorage.setItem("Email", emailvalue);
@@ -40,10 +40,13 @@ function signUp() {
       username.value = "";
       email.value = "";
       password.value = "";
+      setTimeout(() => {
+        window.location.href = "../login/index.html";
+      },2000);
     } else {
       alert("Sign Up Cancelled");
     }
   } else {
-    alert("Please fill all the inputs");
+    alert("Please fill in all the inputs");
   }
 }

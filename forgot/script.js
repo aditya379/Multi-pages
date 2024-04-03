@@ -9,6 +9,7 @@ button.addEventListener("click", () => {
     if (namevalue !== "") {
       let userValue = localStorage.getItem("UserName");
       if (namevalue === userValue) {
+        username.value = ""; // Clear the input field
         username.placeholder = "New Password";
         update.innerHTML = "Enter Your New Password";
         button.innerHTML = "Submit";
@@ -24,7 +25,11 @@ button.addEventListener("click", () => {
       localStorage.setItem("Password", newPassword);
       update.innerHTML = "Password updated successfully!";
       username.value = "";
-      button.innerHTML = "Check"; // Reset button text after submitting
+      button.innerHTML = "Check";
+      setTimeout(() => {
+        window.location.href = "../login/index.html";
+      }, 2000);
+     
     } else {
       update.innerHTML = "Please enter a new password";
     }
